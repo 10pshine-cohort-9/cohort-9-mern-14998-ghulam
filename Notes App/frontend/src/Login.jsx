@@ -11,7 +11,7 @@ export default function Login() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log({ email, password, remember })
+        console.log({remember})
 
     }
     return (
@@ -49,9 +49,7 @@ export default function Login() {
                                 onChange={(e) => setRemember(e.target.checked)} />
                             Remember me
                         </label>
-                        <Link to="/forgot-password" className="auth-link">
-                            Forgot Password?
-                        </Link>
+                        
                     </div>
                     <button type='submit' className='auth-button' >Login</button>
                 </form>

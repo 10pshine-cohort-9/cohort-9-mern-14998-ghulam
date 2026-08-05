@@ -8,7 +8,6 @@ export default function ForgotPassword() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({ email });
     setSubmitted(true);
   };
 
